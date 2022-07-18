@@ -27,6 +27,13 @@ class Point{
     showpoint(){
         console.log(`(${this.x},${this.y})`);
     }
+    add(p2){
+        let x = this.x + p2.x;
+        let y =this.y + p2.y;
+        console.log(`(${x},${y})`);
+    }
 }
 let p1 = new Point(3,6);
+let p2 = new Point(4,1);
 p1.showpoint();
+p1.add(p2);
